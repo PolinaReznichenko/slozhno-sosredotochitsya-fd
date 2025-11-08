@@ -10,6 +10,9 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--main-font-size, 18px);
+  color: var(--text-color, #353430);
 }
 
 h1,
@@ -20,6 +23,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -31,6 +35,11 @@ ul {
 picture {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 button,
