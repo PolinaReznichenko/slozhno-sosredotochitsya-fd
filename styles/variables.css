@@ -5,11 +5,36 @@
 :root {
   --background-image: url(../images/cover-image-light.png);
   --background-color: #FFF1F7;
+ /*ТЕКСТ*/
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --main-line-height: 130%;
+ /*ПАДДИНГИ*/
   --general-internal-padding: 10px;
+  --content-padding-block: 40px;
+ /*ГЭП*/
+  --content-gap: 50px;
+  --section-gap: 20px;
+  --card-gap: 10px;
+  /*АКЦЕНТ*/
   --accent-color: #FF8DCB;
-  --title-accent-color: #353430;
-  --text-color: #353430;
-  --content-padding: 40px;
+  --accent-title-color: #353430;
+  /*ЦВЕТА*/
+  --main-title-color: #FFC2E6;
+  --section-title-color: #353430;
+  --main-text-color: #353430;
+  --button-color: #353430;
+  --shadow-color: #FF8DCB;
+  --decorative-element-color: #FF0070;
+  --decorated-border-color: #353430;
+}
+
+@media (width >= 768px) {
+  :root {
+    --general-internal-padding: 20px;
+    --content-padding-block: 60px;
+    --content-gap: 80px;
+  }
 }
