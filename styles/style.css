@@ -8,19 +8,15 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--background-color);
-  padding: var(--general-internal-padding);
 }
 
 .header {
   block-size: 100dvh;
   min-block-size: 668px;
+  padding: var(--general-internal-padding);
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  position: relative;
-}
-
-.decorated-zone {
   position: relative;
 }
 
@@ -35,25 +31,25 @@
 }
 
 .decorated-zone::after {
-  bottom: 0;
-  left: 0;
-  border-top-color: transparent;
-  border-right-color: transparent;
+  bottom: 10px;
+  left: 10px;
+  border-top: none;
+  border-right: none;
 }
 
 .decorated-zone::before {
-  top: 0;
-  right: 0;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+  top: 10px;
+  right: 10px;
+  border-bottom: none;
+  border-left: none;
 }
 
 .header_decorative_element {
-  display: flex;
+  display: flex; /*нужен дисплей блок*/
   flex-direction: row;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   font-family: inherit;
   font-weight: 400;
   font-size: var(--main-font-size);
@@ -109,7 +105,15 @@
   color: var(--text-color);  /*здесь нужен цвет как у h2*/
 }
 
-.header_title {
+.header__theme-menu-button:hover {
+  outline: 1px solid rgb(50 49 45 / 0.4);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
+.title {
   font-family: inherit;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -135,3 +139,114 @@
   line-height: 130%;
 }
 
+
+.content {
+  padding-inline: var(--general-internal-padding);
+  padding-block: var(--content-padding);
+  display: grid;
+  gap: 50px;
+}
+
+.content-section {
+  display: grid;
+  gap: 20px;
+}
+
+.content-section_reasons {}
+
+.content-section_title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  color: var(--text-color); /*другой цвет*/
+  line-height: 130%;
+}
+
+.card-list {
+  display:grid;
+  gap: 20px;
+  list-style: none;
+}
+
+.card-list-item {
+  inline-size: 100%;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+.card_title {
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 130%;
+}
+
+.card_text {
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  color: var(--text-color);
+  line-height: 130%;   /*подумать, как сделать отступы между параграфами*/
+}
+
+.card_text_link {
+  text-decoration: none;
+  text-shadow: 2px 1px 0 var(--accent-color);
+  cursor: pointer;
+}
+
+.card_text_link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.card_text_link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.content-section_сoncentration_problems {}
+
+.card-list_alternate {}
+
+.content-section_recommendations {}
+
+.content-section_container .card_title {
+  margin-bottom: 20px;
+  margin-top: -2px;
+}
+
+.card-list-item_heading {
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: 130%;
+}
+
+.content-section_gallery {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery__image {
+  display: block;
+  block-size: 100%;
+  max-block-size: 100%;
+  inline-size: 100%;
+  max-inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  block-size: 100dvh;
+  min-block-size: 668px;
+  padding: var(--general-internal-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer_title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
