@@ -31,7 +31,7 @@
   --decorated-border-color: #353430;
 }
 
-@media (width >= 768px) {
+@media (width >= 768px) or (width >= 1024px) {
   :root {
     --general-internal-padding: 20px;
     --content-padding-block: 60px;

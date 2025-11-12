@@ -9,4 +9,24 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  /*АКЦЕНТ*/
+  --accent-color: #FF0070;
+  --accent-title-color: #000028;
+  /*ЦВЕТА*/
+  --main-title-color: #DB00FF;
+  --section-title-color: #FF0070;
+  --main-text-color: #F1B2CE;
+  --button-color: #FF0070;
+  --shadow-color:#FF0070;
+  --decorated-border-color: #FF0070;
+}
+
+.theme-dark .header_decorative_element {
+  display: flex;
+}
+
+.theme-dark .header_decorative_element::after {
+  display: block;
 }

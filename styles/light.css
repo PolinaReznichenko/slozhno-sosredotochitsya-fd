@@ -9,4 +9,21 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
+  /*АКЦЕНТ*/
+  --accent-color: #FF8DCB;
+  --accent-title-color: #353430;
+  /*ЦВЕТА*/
+  --main-title-color: #FFC2E6;
+  --section-title-color: #353430;
+  --main-text-color: #353430;
+  --button-color: #353430;
+  --shadow-color: #FF8DCB;
+  --decorated-border-color: #353430;
+}
+
+.theme-light .header_decorative_element, 
+.theme-light .header_decorative_element::after {
+  display: none;
 }
