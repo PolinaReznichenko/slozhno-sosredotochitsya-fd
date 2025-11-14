@@ -257,8 +257,6 @@
   text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
-/*ПЛАНШЕТ*/
-
 @media (width >= 768px) {
   .header {
     padding-inline: var(--general-internal-padding);
@@ -360,8 +358,6 @@
     margin-inline-start: 0;
   }
 }
-
-/*НОУТБУК*/
 
 @media (width >= 1024px) {
   .header__theme-menu {
