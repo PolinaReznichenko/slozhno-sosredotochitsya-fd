@@ -4,37 +4,33 @@
 */
 :root {
   --background-image: url(../images/cover-image-light.png);
-  --background-color: #FFF1F7;
- /*ТЕКСТ*/
+  --background-color: #fff1f7;
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --main-line-height: 130%;
- /*ПАДДИНГИ*/
-  --general-internal-padding: 10px;
-  --content-padding-block: 40px;
- /*ГЭП*/
-  --content-gap: 50px;
-  --section-gap: 20px;
-  --card-gap: 10px;
-  /*АКЦЕНТ*/
-  --accent-color: #FF8DCB;
+  --general-internal-padding: 0.556em;
+  --content-padding-block: 2.223em;
+  --content-gap: 2.778em;
+  --section-gap: 1.111em;
+  --card-gap: 0.556em;
+  --accent-color: #ff8dcb;
   --accent-title-color: #353430;
-  /*ЦВЕТА*/
-  --main-title-color: #FFC2E6;
+  --main-title-color: #ffc2e6;
   --section-title-color: #353430;
   --main-text-color: #353430;
   --button-color: #353430;
-  --shadow-color: #FF8DCB;
-  --decorative-element-color: #FF0070;
+  --button-color-hover: rgb(50 49 45 / 0.4);
+  --shadow-color: #ff8dcb;
+  --decorative-element-color: #ff0070;
   --decorated-border-color: #353430;
 }
 
 @media (width >= 768px) or (width >= 1024px) {
   :root {
-    --general-internal-padding: 20px;
-    --content-padding-block: 60px;
-    --content-gap: 80px;
+    --general-internal-padding: 1.111em;
+    --content-padding-block: 3.333em;
+    --content-gap: 4.444em;
   }
 }

@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size, 18px);
-  color: var(--text-color, #353430);
+  color: var(--main-text-color, #353430);
 }
 
 h1,

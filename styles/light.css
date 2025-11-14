@@ -10,20 +10,19 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
-  --background-color: #FFF1F7;
-  /*АКЦЕНТ*/
-  --accent-color: #FF8DCB;
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
   --accent-title-color: #353430;
-  /*ЦВЕТА*/
-  --main-title-color: #FFC2E6;
+  --main-title-color: #ffc2e6;
   --section-title-color: #353430;
   --main-text-color: #353430;
   --button-color: #353430;
-  --shadow-color: #FF8DCB;
+  --button-color-hover: rgb(50 49 45 / 0.4);
+  --shadow-color: #ff8dcb;
   --decorated-border-color: #353430;
 }
 
-.theme-light .header_decorative_element, 
-.theme-light .header_decorative_element::after {
+.theme-light .header__decorative_element,
+.theme-light .header__decorative_element::after {
   display: none;
 }

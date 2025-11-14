@@ -11,22 +11,45 @@
   */
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
-  /*АКЦЕНТ*/
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
   --accent-title-color: #000028;
-  /*ЦВЕТА*/
-  --main-title-color: #DB00FF;
-  --section-title-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --button-color: #FF0070;
-  --shadow-color:#FF0070;
-  --decorated-border-color: #FF0070;
+  --main-title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --button-color: #ff0070;
+  --button-color-hover: rgb(255 0 112 / 0.4);
+  --shadow-color: #ff0070;
+  --decorated-border-color: #ff0070;
 }
 
-.theme-dark .header_decorative_element {
+.theme-dark .header__decorative_element {
   display: flex;
 }
 
-.theme-dark .header_decorative_element::after {
+.theme-dark .header__decorative_element::after {
   display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+    --accent-color: #ff0070;
+    --accent-title-color: #000028;
+    --main-title-color: #db00ff;
+    --section-title-color: #ff0070;
+    --main-text-color: #f1b2ce;
+    --button-color: #ff0070;
+    --button-color-hover: rgb(255 0 112 / 0.4);
+    --shadow-color: #ff0070;
+    --decorated-border-color: #ff0070;
+  }
+
+  .header__decorative_element {
+    display: flex;
+  }
+
+  .header__decorative_element::after {
+    display: block;
+  }
 }
