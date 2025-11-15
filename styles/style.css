@@ -26,7 +26,7 @@
 
 .decorated-zone::after,
 .decorated-zone::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 25px;
   height: 25px;
@@ -63,8 +63,8 @@
 }
 
 .header__decorative_element::after {
-  content: "";
-  display: none;
+  content: '';
+  display: block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -108,10 +108,6 @@
 .header__theme-menu-button_active {
   outline: 1px solid currentColor;
   pointer-events: none;
-}
-
-.header__theme-menu-button_type_auto {
-  color: var(--button-color);
 }
 
 .header__theme-menu-button:hover {
@@ -200,7 +196,7 @@
 .card_text-link {
   text-decoration: none;
   color: inherit;
-  text-shadow: 2px 1px 0 var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
   cursor: pointer;
 }
 

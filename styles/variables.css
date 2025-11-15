@@ -5,7 +5,7 @@
 :root {
   --background-image: url(../images/cover-image-light.png);
   --background-color: #fff1f7;
-  --main-font: "IBM Plex mono";
+  --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-regular: 400;

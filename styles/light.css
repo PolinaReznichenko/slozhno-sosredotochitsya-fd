@@ -22,7 +22,6 @@
   --decorated-border-color: #353430;
 }
 
-.theme-light .header__decorative_element,
-.theme-light .header__decorative_element::after {
+.theme-light .header__decorative_element {
   display: none;
 }

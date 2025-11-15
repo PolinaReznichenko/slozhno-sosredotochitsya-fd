@@ -26,10 +26,6 @@
   display: flex;
 }
 
-.theme-dark .header__decorative_element::after {
-  display: block;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: url(../images/cover-image-dark.png);
@@ -47,9 +43,5 @@
 
   .header__decorative_element {
     display: flex;
-  }
-
-  .header__decorative_element::after {
-    display: block;
   }
 }
